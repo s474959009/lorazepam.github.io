@@ -24,7 +24,7 @@
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
                 <h1 id="username" >lorazepam</h1>
-                <h4 id="persona-tag" >PHP / Web / 微信开发</h4>
+                <h4 id="persona-tag" >PHP / Web后端 / 微信开发</h4>
             </div>
             <div class="profile info-unit">
                 <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
@@ -47,13 +47,13 @@
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">手机</label><span class="label-value">188xxxxx879</span></li>
+                        <label class="left-label">手机</label><span class="label-value">18838988879</span></li>
                     <li>
                         <label class="left-label">邮箱</label><span class="label-value">s474959009@gmail.com</span></li>
                     <li>
                         <label class="left-label">个人主页</label><span class="label-value">s474959009.github.io</span></li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/s474959009</span></li>
+                        <label class="left-label">私人博客</label><span class="label-value">http://114.215.91.77:3331</span></li>
                 </ul>
             </div>
 <!--             <div class="skill info-unit">
@@ -79,13 +79,13 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap、ExtJS、zepto.js</span></li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap、vue、gulp</span></li>
                     </li>
                     <li>
-                        <label class="left-label">后端</label><span class="label-value">PHP、Laravel、Node.js、Koa、MongoDB、MySQL、Redis</span></li>
+                        <label class="left-label">后端</label><span class="label-value">PHP、Laravel、Yaf、PostgreSQL、MySQL、Redis</span></li>
                     </li>
                     <li>
-                        <label class="left-label">其它</label><span class="label-value">Linux、Git、Vim、Composer</span></li>
+                        <label class="left-label">其它</label><span class="label-value">Linux、Git、SVN、node</span></li>
                     </li>
                 </ul>
             </div>
@@ -119,47 +119,48 @@
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">AlphaThink团队经历</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">AlphaThink团队（12-16）</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
                         <h3>负责开发项目</h3>
-                        <p>团队博客、招新、宣传等页面</p>
                         <p>郑大街-二手市场APP（负责后端API）</p>
                         <p>esotalk论坛二次开发</p>
                         <p>微信公众号开发</p>
                     </li>
                 </ul>
             </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">仟传网络（16-至今）</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>八点一刻微信公众平台(https://github.com/s474959009/zzufor)</h3>
-                        <p>为学生提供成绩查询和失物招领功能，本人负责所有的前端页面和后台开发以及服务器部署。</p>
+                        <h3>负责开发项目</h3>
+                        <p>SCRM公众号管理平台</p>
+                        <p>微任务-全员营销平台</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人负责项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>微任务-全员营销平台（17-至今）</h3>
+                        <p>该项目是一个基于微信的任务下发数据统计平台。B端用户配置加有监测的H5，C端用户在微信网页或小程序中传播H5，平台进行数据统计和奖励发放等行为。平台包含奖励配置，角色权限管理，差异化显示配置，积分抽奖，积分商城等模块。</p>
                         <br/>                        
-                        <p>现有关注数7000+，最高日调用接口5800+。</p>
+                        <p>后端主要使用NGINX+PHP+PostgreSQL+Redis，基于yaf框架开发，redis作为任务队列和缓存服务。</p>
                         <br/>
-                        <p>成绩查询功能基于Laravel框架开发，根据用户所绑定的信息从教务网抓取成绩数据并储存。当用户频繁请求或教务网异常时，从数据库读取数据。简化了查成绩流程，减轻了教务网访问压力。
+                        <p>项目初期，由于C端页面使用smarty开发，在高并发情况下会造成服务器带宽和CPU负载过高。
+                        <p>抽奖模块未做异步处理，高并发会导致数据库连接数过多，奖品超发等情况。</p>
+                        <p>开发流程不够规范，导致其他人员无法流畅加入开发工作</p>
                         </p>
                         <br/>
-						<p>失物招领模块采用自定义标签的方式来对物品分类。将物品与标签信息存入Redis，利用Redis数据结构特性实现物品检索、周期性更新热频标签及物品功能。相比固定繁杂的分类方式，用户使用更高效。
+						<p>后续不断优化项目，在BC端均采用前后端分离。接入sentry做异常日志统计，采用apidoc生成文档，完善yaf框架加入限流，参数校验模块。借鉴DDD（领域驱动设计）调整代码架构。对积分抽奖模块进行重构，使用redis做任务队列，将抽奖流程同步转为异步，从而解决奖品超发的问题。
 						</p>
-                    </li>
-                    <li>
-                        <h3>二手市场APP后台API（https://github.com/s474959009/ZDJ-API）</h3>
-                        <p>该项目是安卓APP，是专门为郑州大学学生开发的二手物品交易平台。本人负责APP接口设计和开发。</p>
                         <br/>
                         <p>
-                            APP后台基于Node.js、MongoDb和Redis开发。除了基本的二手物品交易功能外，还通过Redis做热数据缓存，提高服务器响应速度。
-                        </p>
-                    </li>
-                    <li>
-                        <h3>其他项目</h3>
-                        <p>郑州大学网站导航、Docker毕业设计、前端页面等</p>
-                        <p>
-                            Github地址：github.com/s474959009
+                            项目开发运营至今，已优化出一套基础产品框架，可根据不同需求定制化开发，平均每个项目消耗30人/天。从而达到了快速高效的开发流程。先后接入vivo、金立、万达、蓝光、红星美凯龙、联想等客户。每个项目代码独立部署，共用一个数据库。平台总用户在45W左右，高峰时期QPS在1500左右。
                         </p>
                     </li>
                 </ul>
@@ -183,24 +184,14 @@
                 <ul class="experience-list">
                 <li>
                     <p>
-                    热爱技术，多年在AlphaThink团队的工作学习让我受益匪浅。
+                    从学校到公司，一直对技术有执着的追求。在主导《微任务-全员营销》系统的开发工作时，先后尝试接入sentry，phpunit，apidoc等流行工具，对上线前的系统做详细性能测试，优化redis缓存结构尽量摒弃k-v，根据业务需求合理选用hash，zset等数据结构，不断简化、规范化开发流程。
                     </p>
                 </li> 
                 <li>
                     <p>
-                    永远对新技术保持热忱，喜欢通过Google解决问题时的感觉。                   		
+                    项目上线期间的运维，生产环境的错误追踪还没有更好的优化方案。缺少日志分析等方面的了解，每次处理问题比较耗时。这也是我接下来努力的方向。
                     </p>
-                </li>
-                <li>
-                    <p>
-                    烹饪、读书、电影是生活的调味品，也是必需品。              		
-                    </p>
-                </li>      
-                <li>
-                    <p>
-                    感谢您花时间阅读我的简历，期待能有机会和您共事。              		
-                    </p>
-                </li>           
+                </li>              
                 </ul>
             </div>
         </div>
