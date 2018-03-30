@@ -277,6 +277,10 @@ ul li{
     
 }
 
+.experience-list p{
+    list-style-type: disc;
+}
+
  .stack-list .item-remove {
     position: absolute;
     right: 2px;

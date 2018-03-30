@@ -23,8 +23,8 @@
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
-                <h1 id="username" >lorazepam</h1>
-                <h4 id="persona-tag" >PHP / PgSQL / 微信开发</h4>
+                <h1 id="username">lorazepam</h1>
+                <h4 id="persona-tag">PHP / PgSQL / 微信开发</h4>
             </div>
             <div class="profile info-unit">
                 <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
@@ -54,7 +54,7 @@
                         <label class="left-label">个人博客</label><span class="label-value">https://www.lol-blog.xyz/</span></li>
                 </ul>
             </div>
-<!--             <div class="skill info-unit">
+            <!--             <div class="skill info-unit">
                 <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
                 <hr>
                 <ul class="progress-list">
@@ -77,17 +77,16 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap、vue、gulp</span></li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap、vue、gulp</span>
                     </li>
                     <li>
-                        <label class="left-label">后端</label><span class="label-value">PHP、Laravel、Yaf、PostgreSQL、MySQL、Redis</span></li>
+                        <label class="left-label">后端</label><span class="label-value">PHP、Laravel、Yaf、PostgreSQL、MySQL、Redis</span>
                     </li>
                     <li>
-                        <label class="left-label">其它</label><span class="label-value">Linux、Git、SVN、Node</span></li>
+                        <label class="left-label">其它</label><span class="label-value">Linux、Git、SVN、Vgrant、Docker</span>
                     </li>
                 </ul>
             </div>
-
             <div class="code info-unit">
                 <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信(推荐微信联系)</span></h2>
                 <hr>
@@ -103,28 +102,15 @@
             </div>
         </div>
         <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>郑州大学 - 计算机应用技术（专科）2012-2014</h3>
-                    </li>
-                	<li>
-                        <h3>郑州轻工业学院 - 软件工程（本科）2014-2016</h3>
-                    </li>
-                </ul>
-            </div>
             <div class="work info-unit right-list">
                 <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">AlphaThink团队（12-16）</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>负责开发项目</h3>
-                        <p>郑大街-二手市场APP（负责后端API）</p>
-                        <p>esotalk论坛二次开发</p>
-                        <p>微信公众号开发</p>
-                    </li>
+                        <h3>负责开发项目</h3></li>
+                    <p>郑大街-二手市场APP（负责后端API）</p>
+                    <p>esotalk论坛二次开发</p>
+                    <p>微信公众号开发</p>
                 </ul>
             </div>
             <div class="work info-unit right-list">
@@ -132,63 +118,45 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>负责开发项目</h3>
-                        <p>SCRM公众号管理平台</p>
-                        <p>微任务-全员营销平台</p>
-                    </li>
+                        <h3>负责开发项目</h3></li>
+                    <p>SCRM公众号管理系统</p>
+                    <p>微任务-全员营销系统</p>
                 </ul>
             </div>
             <div class="project info-unit right-list">
                 <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人负责项目</span></h2>
                 <hr>
                 <ul class="experience-list">
+                    <h3>微任务-全员营销系统（17-至今）</h3>
+                    <li>我负责项目的整体架构搭建和开发，数据库的设计。以及主导后续后端的优化重构等工作。</li>
+                    <li>该项目是一个基于微信的任务下发数据统计系统。B端用户配置加有监测的H5，C端用户在微信网页或小程序中传播H5，系统进行数据统计和奖励发放等行为。系统包含奖励配置，任务分组推送，角色权限管理，差异化显示配置，积分抽奖应用，积分商城等模块。</li>
+                    <li>后端主要使用Nginx+PHP+PostgreSQL+Redis，基于yaf框架开发，Redis作为任务队列和缓存服务。</li>
+                    <li>项目初期，由于C端页面使用smarty开发，在高并发情况下会造成服务器带宽和CPU负载过高。</li>
+                    <li>抽奖模块在高并发条件下，会导致数据库连接数过多，奖品超发等情况。</li>
+                    <li>开发流程不够规范，导致其他人员无法流畅加入开发工作</li>
+                    <li>后续不断优化项目，在BC端均采用前后端分离。接入Sentry做异常日志统计，采用apidoc生成文档，完善Yaf框架加入限流，参数校验模块。借鉴DDD（领域驱动设计）调整代码架构。对积分抽奖模块进行重构，使用Redis做奖品队列，将抽奖流程同步转为异步，从而解决奖品超发的问题。
+                    </li>
                     <li>
-                        <h3>微任务-全员营销平台（17-至今）</h3>
-                        <p>该项目是一个基于微信的任务下发数据统计系统。B端用户配置加有监测的H5，C端用户在微信网页或小程序中传播H5，平台进行数据统计和奖励发放等行为。平台包含奖励配置，任务下发，角色权限管理，差异化显示配置，积分抽奖，积分商城等模块。</p>
-                        <br/>                        
-                        <p>后端主要使用Nginx+PHP+PostgreSQL+Redis，基于yaf框架开发，Redis作为任务队列和缓存服务。</p>
-                        <br/>
-                        <p>项目初期，由于C端页面使用smarty开发，在高并发情况下会造成服务器带宽和CPU负载过高。
-                        <p>抽奖模块未做异步处理，高并发会导致数据库连接数过多，奖品超发等情况。</p>
-                        <p>开发流程不够规范，导致其他人员无法流畅加入开发工作</p>
-                        </p>
-                        <br/>
-						<p>后续不断优化项目，在BC端均采用前后端分离。接入Sentry做异常日志统计，采用apidoc生成文档，完善Yaf框架加入限流，参数校验模块。借鉴DDD（领域驱动设计）调整代码架构。对积分抽奖模块进行重构，使用Redis做任务队列，将抽奖流程同步转为异步，从而解决奖品超发的问题。
-						</p>
-                        <br/>
-                        <p>
-                            项目开发运营至今，已优化出一套基础产品框架，可根据不同需求定制化开发，平均每个项目消耗30人/天。从而达到了快速高效的开发流程。先后接入vivo、金立、万达、蓝光、红星美凯龙、联想等客户。每个项目代码独立部署，共用一个数据库。平台总用户在45W左右，高峰时期QPS在1500+。
-                        </p>
+                        项目开发运营至今，已优化出一套基础产品框架，可根据不同需求定制化开发，平均每个项目消耗20人/天。从而达到了快速高效的开发流程。先后接入vivo、金立、万达、蓝光、红星美凯龙、联想等客户。系统总用户在45W左右，高峰时期QPS在1500+。
                     </li>
                 </ul>
             </div>
             <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">技能</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li>
-                        <h3>河南省青年创新软件设计大赛</h3>
-                        <p>
-                            TD技术应用比赛中，郑大街二手交易APP获得大赛最高奖项。本人负责后台API开发。
-                        </p>
-                    </li> 
-                </ul>
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                <ul class="experience-list">
-                <li>
-                    <p>
-                    从学校到公司，一直对技术有执着的追求。在主导《微任务-全员营销》系统的开发工作时，先后接入Sentry，PHPUnit，apidoc等流行工具。用Vagrant统一开发环境，在Linux下进行日常开发测试工作。对上线前的系统做详细性能测试，合理充分的利用PgSQL的jsonb类型，分析慢日志进行sql调优。优化redis缓存方案尽量摒弃K-V，根据业务需求合理选用hash，zset，list等数据结构。不断简化、规范化开发流程。
-                    </p>
-                </li> 
-                <li>
-                    <p>
-                    项目上线期间的运维，生产环境的错误追踪还没有更好的优化方案。缺少日志分析等方面的了解，每次处理问题比较耗时。这也是我接下来努力的方向。
-                    </p>
-                </li>              
+                    <h3>PHP</h3>
+                    <li>熟悉PHP基本语法和知识，PHP性能优化，掌握流行Web开发框架，能够独立负责一个项目。</li>
+                    <li>熟悉LAMP服务器开发架构。</li>
+                    <li>掌握PHPunit单元测试、profiler性能分析、Apidoc文档管理、Sentry日志管理工具、Composer等自动化部署工具。</li>
+                    <br>
+                    <h3>数据库相关</h3>
+                    <li>掌握关系型数据库基本概念与SQL，对PostgreSQL，MySql有一定使用经验。</li>
+                    <li>对Redis的缓存机制有深入了解，有一定使用经验。</li>
+                    <br>
+                    <h3>其他</h3>
+                    <li>掌握Gitflow工作流，Scrum敏捷开发流程。</li>
+                    <li>使用过Docker、Vagrant虚拟化工具。</li>
                 </ul>
             </div>
         </div>
